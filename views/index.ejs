@@ -1,0 +1,25 @@
+
+<%- include("partials/header.ejs") %>
+
+<main class="weather-data-container">
+    <h1>Welcome to weather reporter</h1>
+    <form action="/weather" method="get" class="get-weather-form">
+        <input type="text" name="city" placeholder="Enter city name" class="city-text-box">
+        <button type="submit">Get Weather</button>
+    </form>
+    <div class="weather-data-container">
+        <% if (locals.content) { %>
+            <div class="weather-data-now">
+                <p class="weather-report-city">Current weather in <%= locals.content.city %></p>
+                <p>Weather: <%= locals.content.weather %></p>
+                <p>Temperature: <%= locals.content.temperature %>C</p>
+                <p>Feels Like: <%= locals.content.feelsLike %>C</p>
+                <p>Humidity: <%= locals.content.humidity %></p>
+                <p>Wind Speed: <%= locals.content.windSpeed %></p>
+                <p>Cloudiness: <%= locals.content.cloudiness %>%</p>
+            </div>
+        <% } %>
+    </div>
+</main>
+
+<%- include("partials/footer.ejs") %>
