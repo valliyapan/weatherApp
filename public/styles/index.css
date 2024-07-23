@@ -1,0 +1,55 @@
+body {
+    background-image: url('../images/weather-background.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.weather-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: antiquewhite;
+}
+
+.get-weather-form > * {
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.weather-data-now {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+}
+
+.weather-report-city {
+    align-self: center;
+}
+
+.weather-data-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
